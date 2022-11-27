@@ -29,6 +29,8 @@ urlpatterns = [
     path('a_propos/', views.a_propos, name='a_propos'),
     path('404/', views.error_404, name='error_404'),
     path('login/', views.login, name='login'),
+    path('export-to-csv', views.export_to_csv, name ='export_to_csv' ),
+    path('import-csv', views.import_csv, name ='import_csv' )
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, 
