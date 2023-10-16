@@ -19,7 +19,7 @@ RUN mkdir -p eliane/staticfiles
 
 RUN ls
 RUN virtualenv env
-RUN env/bin/activate
+RUN chmod +x env/bin/activate
 RUN ls
 RUN mkdir -p eliane/
 # Collectez les fichiers statiques de Django
