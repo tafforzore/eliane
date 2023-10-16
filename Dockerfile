@@ -11,7 +11,7 @@ EXPOSE 8000
 
 ENV DJANGO_SETTINGS_MODULE=eliane.settings
 ENV DEBUG=False
-RUN mkdir -p /eline/staticfiles
+RUN mkdir -p /eliane/staticfiles
 RUN python manage.py collectstatic --noinput
 RUN python manage.py migrate
 
