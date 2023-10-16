@@ -12,6 +12,9 @@ EXPOSE 8000
 ENV DJANGO_SETTINGS_MODULE=eliane.settings
 ENV DEBUG=False
 WORKDIR /eliane
+RUN cd eliane
+RUN ls
+COPY . /eliane/
 RUN mkdir -p eliane/staticfiles
 
 RUN ls
