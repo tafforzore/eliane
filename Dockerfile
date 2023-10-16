@@ -11,9 +11,9 @@ EXPOSE 8000
 
 ENV DJANGO_SETTINGS_MODULE=eliane.settings
 ENV DEBUG=False
-RUN mkdir -p /eliane/staticfiles
+RUN mkdir -p home/eliane/staticfiles
 RUN virtualenv env
-RUN cd home/
+RUN cd home/eliane/
 RUN ls
 
 # Collectez les fichiers statiques de Django
