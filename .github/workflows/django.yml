@@ -24,5 +24,5 @@ jobs:
     - name: Install Dependencies
       run: |
         cd ../
-        docker build -t Dockerfile .
+        docker build -t dockerfile .
         ALLOWED_HOSTS="159.223.235.96" python manage.py runserver 0.0.0.0:8000
