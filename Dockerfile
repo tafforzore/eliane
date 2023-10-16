@@ -4,6 +4,7 @@ WORKDIR /
 RUN python -m pip install --upgrade pip
 RUN python -m pip install django
 RUN python -m pip install virtualenv
+RUN python -m pip install Pillow
 #COPY . /app/
 
 # Exposez le port sur lequel votre application Django fonctionne (par défaut 8000)
