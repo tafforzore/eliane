@@ -6,7 +6,7 @@ RUN python -m pip install django
 RUN python -m pip install virtualenv
 RUN virtualenv env
 RUN source/bin/activate
-
+RUN ls
 #COPY . /app/
 
 # Exposez le port sur lequel votre application Django fonctionne (par défaut 8000)
