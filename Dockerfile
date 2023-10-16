@@ -13,6 +13,7 @@ ENV DJANGO_SETTINGS_MODULE=eliane.settings
 ENV DEBUG=False
 RUN mkdir -p /eliane/staticfiles
 RUN virtualenv env
+ls
 
 # Collectez les fichiers statiques de Django
 RUN python manage.py collectstatic --noinput
