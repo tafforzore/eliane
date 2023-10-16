@@ -3,9 +3,6 @@ FROM python:3.9
 WORKDIR /
 RUN python -m pip install --upgrade pip
 RUN python -m pip install django
-RUN python -m pip install virtualenv
-RUN virtualenv env
-RUN source/bin/activate
 
 #COPY . /app/
 
