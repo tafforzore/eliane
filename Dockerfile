@@ -19,7 +19,7 @@ RUN mkdir -p eliane/staticfiles
 
 RUN ls
 RUN virtualenv env
-RUN source env/bin/activate
+RUN /env/bin/activate
 # Collectez les fichiers statiques de Django
 RUN python manage.py collectstatic --noinput
 
