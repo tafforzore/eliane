@@ -12,8 +12,9 @@ EXPOSE 8000
 ENV DJANGO_SETTINGS_MODULE=eliane.settings
 ENV DEBUG=False
 RUN mkdir -p /eliane/staticfiles
-RUN python manage.py collectstatic --noinput
-RUN python manage.py migrate
 
-# Commande pour exécuter votre application Django
+
+CMD ["python", "manage.py", "collectstatic", "--noinput"]
+CMD ["python", "manage.py", "collectstatic", "makemigrations"]
+CMD ["python", "manage.py", "migrate"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
