@@ -23,6 +23,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        cd ../
+        cd ../../
+        ls
         docker build -t dockerfile .
         ALLOWED_HOSTS="159.223.235.96" python manage.py runserver 0.0.0.0:8000
