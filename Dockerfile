@@ -5,7 +5,8 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install django
 RUN python -m pip install virtualenv
 RUN virtualenv env
-RUN source/bin/activate
+RUN ls
+RUN source bin/activate
 RUN ls
 #COPY . /app/
 
