@@ -8,7 +8,7 @@ RUN virtualenv env
 RUN ls
 #RUN source  bin/activate
 RUN ls
-#COPY . /app/
+COPY . /app/
 
 # Exposez le port sur lequel votre application Django fonctionne (par défaut 8000)
 EXPOSE 8000
