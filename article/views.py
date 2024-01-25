@@ -56,3 +56,6 @@ def login(request):
 
 def product_infos(request):
     return render(request, 'product_infos.html')
+
+def error_405(request):
+    return render(request, '404.html')
