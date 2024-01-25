@@ -51,8 +51,6 @@ def category(request):
 def error_404(request):
     return render(request, '404.html')
 
-def error_405(request):
-    return render(request, '404.html')
 def login(request):
     return render(request, 'login.html')
 
